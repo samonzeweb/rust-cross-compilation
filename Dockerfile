@@ -4,7 +4,7 @@ LABEL UPDATED_AT=2021-03-16
 
 RUN apt-get update && \
     apt-get dist-upgrade -y && \
-    apt-get install mingw-w64 gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu -y && \
+    apt-get install gcc-x86-64-linux-gnu mingw-w64 gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu -y && \
     rustup target add x86_64-unknown-linux-gnu && \
     rustup target add x86_64-pc-windows-gnu && \
     rustup target add arm-unknown-linux-gnueabi  && \

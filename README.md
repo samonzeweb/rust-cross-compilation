@@ -6,7 +6,9 @@ This projet is an example (and reminder) of doing cross compilation with Rust.
 
 The build if done with Docker as it's the best way to experiment in a clean (isolated) way. The targets are Windows (AMD64) and Linux (multiple architectures, GNU ABI).
 
-Only platforms/architectures I can check are presents.
+The build is tested on AMD64 and ARMv8 architectures. Both build all targets.
+
+Not all possible targets are presents, only ones I can validate are presents.
 
 The Rust code is the default one created by `cargo new`, it prints `Hello, world!`.
 
